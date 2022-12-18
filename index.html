@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="App.css">
+</head>
+<body>
+ <div class="container">
+  <div class="logo">
+    <img src="tip-calculator-app-main\images\logo.svg" alt="">
+  </div>
+  <div class="card">
+    <div class="bill-holder">
+      <div class="bill-input-holder">
+        <label for="bill-input">Bill</label>
+        <div class="bill-input-img">
+          <input type="text" id="bill-input" value="1000"/>
+          <img class="dollar" src="tip-calculator-app-main\images\icon-dollar.svg" alt="">
+        </div>
+
+      </div>
+      <div class="select-tip-holder">
+        <p class="select-tip-title">
+          Select Tip %
+        </p>
+        <div id="select-tip-percent">
+          <div class="tip-percent" id="five" data-percentage="5" value = '5'>5%</div>
+          <div class="tip-percent" id="ten" data-percentage="10" value = '10'>10%</div>
+          <div class="tip-percent active" id="fifteen" data-percentage="15" value = '15'>15%</div>
+          <div class="tip-percent" data-percentage="25" id="twentyfive" value = '25'>25%</div>
+          <div class="tip-percent" data-percentage="50" id="fifty" value = '30'>50%</div>
+          <input type="text" class="input-custom tip-percent" placeholder="Custom">
+        </div>
+
+  
+  
+  
+  
+      </div>
+      <div class="number-person">
+        <div class="number-person-holder">
+          <label for="number-person">Number of people</label>
+          <div id="error">
+            <p>Number of persons cannot be zero</p>
+           </div>
+          <div class="number-person-img">
+         
+            <input type="text" id="number-person-input" value="5"/>
+            <img class="person" src="tip-calculator-app-main\images\icon-person.svg" alt="">
+          </div>
+  
+        </div>
+      </div>
+
+    </div>
+    <div id="tip-amount">
+      <div id="one">
+        <div class="first">
+          <div class="tip-amount-title">
+            <h3>
+              Tip Amount
+            </h3>
+            <p>/ person</p>
+          </div>
+          <div class="tip-actual-amount">
+            $4.27
+          </div>
+        </div>
+        <div class="second">
+          <div class="total-amount-title">
+            <h3>
+              Total
+            </h3>
+            <p>/ person</p>
+          </div>
+          <div class="total-actual-amount">
+            $32.79
+          </div>
+        </div>
+      </div>
+      <div id="two">
+        <button id="reset-btn">RESET</button>
+      </div>
+    </div>
+  
+
+
+
+
+
+  </div>
+ </div>
+
+ 
+  
+
+  <script src="App.js"></script>
+</body>
+</html>
